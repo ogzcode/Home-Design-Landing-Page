@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/home/oem/Desktop/fontawesome-free-6.0.0-web/css/all.min.css">
+	<link rel="stylesheet" href="src/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header class="home__bg">
+		<nav class="nav">
+			<p class="nav__logo">My Home</p>
+			<div class="nav__menu__box">
+				<a class="menu__item close" onclick="showMenu()">
+					<i class="fas fa-times"></i>
+				</a>
+
+				<a href="#living-room" class="menu__item">
+					Living Room
+					<span class="item__border"></span>
+				</a>
+				<a href="#bedroom" class="menu__item">
+					Bedroom
+					<span class="item__border"></span>
+				</a>
+				<a href="#kitchen" class="menu__item">
+					Kitchen
+					<span class="item__border"></span>
+				</a>
+				<a href="#bathroom" class="menu__item">
+					Bathroom
+					<span class="item__border"></span>
+				</a>
+			</div>
+			<button class="nav__btn" onclick="showMenu()">
+				<i class="fas fa-bars"></i>
+			</button>
+		</nav>
+		<section class="home__content">
+			<p class="large__text">Design Your Home</p>
+			<p class="little__text">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br/>
+				Vitae, necessitatibus. Suscipit ducimus dolores at minima earum.
+			</p>
+			<button class="home__content__btn">
+				See More
+				<span class="content__btn__before"></span>
+			</button>
+		</section>
+	</header>
+	<main class="main">
+		<div class="room living--room" id="living-room">
+			<div class="room__content">
+				<p class="room__title">Living Room</p>
+				<p class="room__about">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Cum impedit eum vitae vel saepe, excepturi perspiciatis fugiat 
+					repellat cumque explicabo ratione cupiditate officiis consectetur.
+				</p>
+				<button class="room__btn">
+					See More
+					<span class="content__btn__before"></span>
+				</button>
+			</div>
+			<div class="room__image">
+				<img class="img" src="src/living.jpg">
+			</div>
+		</div>
+		<div class="room bedroom" id="bedroom">
+			<div class="room__content">
+				<p class="room__title">Bedroom</p>
+				<p class="room__about">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Cum impedit eum vitae vel saepe, excepturi perspiciatis fugiat 
+					repellat cumque explicabo ratione cupiditate officiis consectetur.
+				</p>
+				<button class="room__btn">
+					See More
+					<span class="content__btn__before"></span>
+				</button>
+			</div>
+			<div class="room__image">
+				<img class="img" src="src/bed.jpg"/>
+			</div>
+		</div>
+		<div class="room kitchen" id="kitchen">
+			<div class="room__content">
+				<p class="room__title">Kitchen</p>
+				<p class="room__about">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Cum impedit eum vitae vel saepe, excepturi perspiciatis fugiat 
+					repellat cumque explicabo ratione cupiditate officiis consectetur.
+				</p>
+				<button class="room__btn">
+					See More
+					<span class="content__btn__before"></span>
+				</button>
+			</div>
+			<div class="room__image">
+				<img class="img" src="src/kitchen.jpg"/>
+			</div>
+		</div>
+		<div class="room bathroom" id="bathroom">
+			<div class="room__content">
+				<p class="room__title">Bathroom</p>
+				<p class="room__about">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Cum impedit eum vitae vel saepe, excepturi perspiciatis fugiat 
+					repellat cumque explicabo ratione cupiditate officiis consectetur.
+				</p>
+				<button class="room__btn">
+					See More
+					<span class="content__btn__before"></span>
+				</button>
+			</div>
+			<div class="room__image">
+				<img class="img" src="src/bath.jpg"/>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__left">
+			<p class="footer__logo">My Home</p>
+			<p class="footer__contact__text">Contact Me</p>
+			<div class="footer__social">
+				<div class="icon__box">
+					<i class="fab fa-facebook-f icon"></i>
+					<span class="icon__border border--left"></span>
+					<span class="icon__border border--top"></span>
+					<span class="icon__border border--right"></span>
+					<span class="icon__border border--bottom"></span>
+				</div>
+				<div class="icon__box">
+					<i class="fab fa-twitter icon"></i>
+					<span class="icon__border border--left"></span>
+					<span class="icon__border border--top"></span>
+					<span class="icon__border border--right"></span>
+					<span class="icon__border border--bottom"></span>
+				</div>
+				<div class="icon__box">
+					<i class="fab fa-instagram icon"></i>
+					<span class="icon__border border--left"></span>
+					<span class="icon__border border--top"></span>
+					<span class="icon__border border--right"></span>
+					<span class="icon__border border--bottom"></span>
+				</div>
+				<div class="icon__box">
+					<i class="fab fa-github icon"></i>
+					<span class="icon__border border--left"></span>
+					<span class="icon__border border--top"></span>
+					<span class="icon__border border--right"></span>
+					<span class="icon__border border--bottom"></span>
+				</div>
+			</div>
+		</div>
+		<div class="footer__right">
+			<p class="footer__right__text">Send Email</p>
+			<div class="footer__form">
+				<input class="form__email" type="email" placeholder="Enter Email.."/>
+				<button class="form__button">Send Email</button>
+			</div>
+		</div>
+		<p class="footer__licence">&copy; Copyright by ogzCode.</p>
+	</footer>
+
+	<script>
+		function showMenu(){
+			document.querySelector(".nav__menu__box").classList.toggle("show");
+		}
+	</script>
+</body>
+
+</html>
